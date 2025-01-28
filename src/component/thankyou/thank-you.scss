@@ -1,0 +1,25 @@
+@import "../../assets/css/variables.scss";
+
+.error-page{
+  margin-top: 30px;
+  h3{
+    margin-top: 40px;
+  }
+
+.btn-knowmore {
+  // @include reddishButton();
+  background-color: $orangecolor !important;
+  padding: 0 15px !important;
+  height: 38px !important;
+  font-size: $font-14;
+  line-height: 38px !important;
+  margin: 20px 0 80px 15px;
+  border: 0 !important;
+  @include border-radius(4px !important);
+
+  @include respond-to("medium") {
+    width: 150px;
+    min-height: 38px;
+  }
+}
+}

@@ -1,0 +1,94 @@
+@import "../../assets/css/variables.scss";
+
+.contact-us strong {
+  font-weight: inherit;
+}
+
+.form {
+  position: relative;
+  z-index: 9;
+
+  .form-control {
+    @include border(1px solid $border);
+    @include border-radius(4px);
+    background: $white;
+    box-shadow: 0px 0px 20px 0px rgba($black, 10%);
+    height: 38px;
+    margin-bottom: 15px;
+  }
+
+  textarea.form-control {
+    height: 100px;
+    
+  }
+}
+.contact-captcha{
+  margin: 30px 0 10px 0!important;
+}
+a {
+  color: $black;
+}
+
+.form-check-input {
+  height: 18px;
+  width: 18px;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.form-label {
+  font-size: $font-14;
+}
+
+.submit {
+  background-color: $orangecolor !important;
+  font-size: $font-16;
+  border: 0 !important;
+  @include border-radius(4px !important);
+  box-shadow: 0px 0px 20px 0px rgba($black, 10%);
+  padding: 0 15px !important;
+  margin: 15px auto 0;
+  display: block;
+  height: 38px;
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $lightred;
+    color: $white;
+  }
+}
+
+.checkbox {
+  .inputcheckbox {
+    vertical-align: top;
+  }
+
+  .form-label {
+    padding-top: 5px;
+
+    @include respond-to('medium') {
+      width: 88%;
+
+    }
+  }
+}
+
+.contact-footer{
+  .mb-3{
+    height:80px;
+    margin-bottom: 0!important;
+  }
+  .form-control{
+    height: 50px;
+    box-shadow:inherit;
+    border:2px solid $border;
+    margin-bottom: 0!important;
+    font-size: $font-14;
+  }
+  .mt-3 {
+    margin-top: 0!important;
+}
+
+}
