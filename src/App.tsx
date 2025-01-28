@@ -15,6 +15,7 @@ import Home from "../src/component/home/home";
 // import Breadcrumb from "../src/component/header/breadCrumb";
 
 import "./App.css";
+
 import Ourstory from "./component/about/our-story";
 import Aibidata from "./component/technologycoes/ai-bi-data";
 import IotMobilityDevices from "./component/technologycoes/iot-mobility-devices";
