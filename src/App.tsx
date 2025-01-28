@@ -127,6 +127,7 @@ function App() {
 
             <Route path="/why-synoverge" element={<WhySynoverge />} />
             <Route path="/career/*" element={<ApplyCareer />} />
+
             <Route path="/contact-us" element={<Contactus />} />
             <Route path="/404-error" element={<Error />} />
             <Route path="/thank-you" element={<Thankyou />} />
