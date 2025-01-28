@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+footer {
+  background-color: #1A1A1A;
+  position: relative;
+  padding: 50px 0 20px;
+}
+@media (max-width: 991px) {
+  footer {
+    padding: 30px 0;
+  }
+}
+footer .pe-10 {
+  padding-right: 10rem;
+}
+footer .footer-nav h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  footer .footer-nav h5 {
+    font-size: 16px;
+  }
+}
+footer .footer-nav h6 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 24px;
+}
+@media (max-width: 991px) {
+  footer .footer-nav h6 {
+    font-size: 14px;
+  }
+}
+footer .footer-nav p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media (max-width: 991px) {
+  footer .footer-nav p {
+    font-size: 14px;
+  }
+}
+footer .footer-nav ul {
+  margin: 0;
+  padding: 0;
+}
+footer .footer-nav ul li {
+  margin-bottom: 8px;
+  display: block;
+}
+footer .footer-nav ul li a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width: 991px) {
+  footer .footer-nav ul li a {
+    font-size: 14px;
+  }
+}
+footer .footer-bottom.footer-bottom {
+  border-top: 1px solid #666 !important;
+  margin-top: 30px;
+}
+footer .footer-bottom.footer-bottom p {
+  color: #fff;
+}
+@media (max-width: 991px) {
+  footer .footer-bottom.footer-bottom p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  footer .footer-bottom.footer-bottom p {
+    text-align: center;
+  }
+}
+footer .footer-bottom.footer-bottom ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 12px;
+  float: right;
+}
+footer .footer-bottom.footer-bottom ul li a svg {
+  height: 18px;
+  width: 18px;
+}
+@media (max-width: 576px) {
+  footer .footer-bottom.footer-bottom ul li {
+    float: right;
+    padding: 0 8px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 576px) {
+  footer .footer-bottom.footer-bottom ul {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}/*# sourceMappingURL=footer.css.map */

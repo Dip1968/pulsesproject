@@ -1,0 +1,1434 @@
+@import "../../assets/css/variables.scss";
+
+.module,
+.module-sm {
+  padding: 50px 0 0 0;
+  @include respond-to("small-t") {
+    padding: 25px 0 0 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ol,
+  p,
+  pre,
+  ul {
+    margin: 0 0 20px;
+  }
+
+  h2 {
+    font-size: $font-32;
+    font-weight: $semibold-weight;
+    color: $black;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: $font-26 !important;
+    font-weight: $medium-weight !important;
+    color: $black;
+    line-height: 40px;
+    margin-bottom: 10px;
+
+    @include respond-to("small-t") {
+      font-size: $font-24 !important;
+      line-height: 36px;
+    }
+  }
+
+  h4 {
+    font-size: $font-20;
+    line-height: 26px;
+  }
+
+  p {
+    font-size: $font-16;
+    font-weight: $regular-weight;
+    line-height: 24px;
+    color: $fontcolor;
+
+    @include respond-to("small-t") {
+      margin-bottom: 15px;
+    }
+  }
+
+  img {
+    z-index: -2;
+  }
+
+  img.left-img {
+    @include border-radii(250px, 250px, 150px, 250px);
+    @include respond-to("medium") {
+      margin-bottom: 40px;
+    }
+    @include respond-to("small") {
+      border-radius: 10px !important;
+      margin-bottom: 15px !important;
+    }
+  }
+
+  img.right-img {
+    @include border-radii(250px, 250px, 250px, 150px);
+    @include respond-to("medium") {
+      margin-bottom: 40px;
+    }
+    @include respond-to("small") {
+      border-radius: 10px !important;
+      margin-bottom: 15px !important;
+    }
+  }
+
+  ul {
+    li {
+      font-size: $font-16;
+      font-weight: $regular-weight;
+      line-height: 24px;
+      color: $fontcolor;
+
+      &::marker {
+        color: $fontcolor;
+        font-size: $font-20;
+        line-height: 36px;
+      }
+    }
+  }
+
+  .syno-card {
+    background: $white;
+    @include border-radius(8px);
+    padding: 15px;
+    margin: 12px 0;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    min-height: 250px;
+
+    @include respond-to("small") {
+      margin: 10px 0;
+    }
+
+    img {
+      height: 100px;
+      width: 100px !important;
+    }
+
+    p {
+      font-size: $font-14;
+    }
+
+    ul {
+      li {
+        font-size: $font-14;
+      }
+    }
+  }
+
+  .btn-submit {
+    background-color: $orangecolor !important;
+    padding: 5px 15px;
+    height: 38px;
+    font-size: $font-16;
+    border: 0;
+    @include border-radius(4px !important);
+
+    .btn-submit:hover,
+    .btn-submit:focus {
+      box-shadow: inset 6.5em 0 0 0 var(--hover);
+    }
+  }
+}
+
+.module-gray {
+  background-color: $white;
+}
+.mildblue-bg {
+  background-color: $mildblue;
+}
+
+// blog css
+.icon-box-content {
+  p {
+    font-size: $font-14;
+  }
+}
+
+.icon-box {
+  padding: 0;
+  @include respond-to("small-t") {
+    padding: 0 0 15px;
+  }
+  h6 {
+    font-size: $font-16;
+    margin: 20px 0 15px;
+    color: $black;
+  }
+  p {
+    line-height: 20px;
+  }
+  a {
+    color: $primaryColor !important;
+    text-decoration: none;
+    font-size: $font-14;
+    padding-bottom: 15px;
+    background: linear-gradient(
+      to right,
+      #ffad2b 20%,
+      #da5c01 30%,
+      #a3489c 70%,
+      #00aeef 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+    &:hover {
+      color: $orangecolor !important;
+    }
+    @keyframes textShine {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+  }
+  .icon-box-link a {
+    margin-top: 15px;
+    text-decoration: none;
+    color: $primaryColor !important;
+    font-size: $font-15;
+
+    :hover {
+      color: $orangecolor !important;
+    }
+  }
+  img.arrowright {
+    width: 20px;
+    height: auto;
+    margin: 0 0 1px 10px;
+  }
+}
+
+.banner {
+  min-height: 350px;
+  background: $bannercolor;
+
+  @include respond-to("xxl") {
+    min-height: 210px;
+  }
+  @include respond-to("large") {
+    min-height: 170px;
+  }
+  @include respond-to("medium") {
+    min-height: 140px;
+  }
+
+  @include respond-to("small") {
+    margin-top: 15px;
+    min-height: auto;
+    background: transparent;
+  }
+
+  .banner-cont {
+    margin-left: 0;
+    margin-right: 15px;
+    margin-top: 100px;
+
+    @include respond-to("xxl") {
+      margin-top: 40px;
+      padding-bottom: 25px;
+    }
+    @include respond-to("large") {
+      margin-top: 0px;
+      padding-bottom: 0;
+    }
+
+    @include respond-to("small") {
+      margin: 0 0 15px 0 !important;
+      padding-bottom: 0;
+    }
+
+    h1 {
+      font-size: $font-50;
+      font-weight: $bold-weight;
+      margin-bottom: 20px;
+      line-height: 65px;
+      text-align: left;
+      font-family: Oswald, sans-serif;
+      background: linear-gradient(
+        to right,
+        #ffad2b 20%,
+        #da5c01 30%,
+        #a3489c 70%,
+        #00aeef 80%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 500% auto;
+      animation: textShine 5s ease-in-out infinite alternate;
+
+      @include respond-to("xxl") {
+        margin-bottom: 0;
+        font-size: $font-40;
+        margin-top: 10px;
+      }
+      @include respond-to("large") {
+        font-size: $font-32;
+        line-height: 40px;
+        margin-bottom: 10px;
+      }
+      @include respond-to("medium") {
+        font-size: $font-28;
+      }
+      @include respond-to("small") {
+        text-align: left;
+        line-height: 40px;
+        margin: 0 0 15px 0;
+      }
+      @keyframes textShine {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+    }
+
+    p {
+      font-size: $font-16;
+      font-weight: $regular-weight;
+      line-height: inherit;
+      color: $fontcolor;
+
+      @include respond-to("small") {
+        text-align: left;
+      }
+    }
+    @include respond-to("small") {
+      margin: 0 20px;
+      max-width: 100%;
+    }
+  }
+  .banner-img {
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 50%;
+
+    @include respond-to("xxl") {
+      width: 45%;
+    }
+
+    @include respond-to("small") {
+      position: relative;
+      padding: 0 !important;
+    }
+
+    img {
+      width: 100%;
+      @include border-radii(250px, 0px, 250px, 0px);
+
+      @include respond-to("small") {
+        border-radius: 10px !important;
+        height: auto;
+      }
+    }
+    @include respond-to("small") {
+      padding: 20px 0;
+      width: 100%;
+    }
+  }
+}
+
+.client-relation {
+  background-color: $primaryColor;
+  @include border-radii(50px, 20px, 20px, 50px);
+  color: $white;
+  text-align: center;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  @include respond-to("large") {
+    padding: 20px 5px;
+  }
+  span {
+    font-size: $font-32;
+    font-weight: $bold-weight;
+    @include respond-to("large") {
+      font-size: $font-24;
+    }
+  }
+  p {
+    font-size: $font-16;
+    color: $white;
+    margin-bottom: 15px;
+    @include respond-to("large") {
+      height: 40px;
+    }
+    @include respond-to("small") {
+      height: inherit;
+    }
+  }
+}
+
+// privacy policy css
+
+.privacy-policy {
+  .module {
+    table {
+      th {
+        background-color: $primaryColor !important;
+        color: $white !important;
+        padding: 15px;
+        font-size: $font-16;
+        font-weight: $medium-weight;
+        border: 0;
+
+        &:first-child {
+          border-radius: 5px 0 0 5px !important;
+        }
+
+        &:last-child {
+          border-radius: 0 5px 5px 0 !important;
+        }
+      }
+
+      tr {
+        border: 0 solid $white;
+
+        td {
+          font-size: $font-16;
+          padding: 15px;
+        }
+      }
+    }
+
+    .personal-data.table {
+      th {
+        border-radius: 5px !important;
+      }
+    }
+  }
+
+  a {
+    color: $primaryColor;
+  }
+
+  &:hover {
+    color: $orangecolor !important;
+  }
+
+  h3 {
+    color: $black !important;
+    padding-top: 30px;
+    font-size: $font-22;
+  }
+
+  h6 {
+    color: $black !important;
+    padding-top: 30px;
+    font-size: $font-18;
+  }
+
+  .padding-none {
+    padding-top: 0 !important;
+  }
+
+  .odd {
+    --bs-table-color-type: var(--bs-table-striped-color);
+    --bs-table-bg-type: var(--bs-table-striped-bg);
+  }
+}
+
+// leadership team css
+.team-item {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  border-radius: 15px;
+  position: relative;
+  @include respond-to("small") {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .team-image {
+    img {
+      width: 100%;
+      border-radius: 15px;
+      @include respond-to("small") {
+        margin: 15px auto;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .card-bg {
+    background: url("../../assets/images/card-bg.png");
+    display: block;
+    height: 109px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    bottom: -1px;
+    border-radius: 0 0 15px 15px;
+    @include respond-to("small") {
+      bottom: 0;
+    }
+    @include respond-to("small-t") {
+      bottom: 15px;
+    }
+  }
+  .team-content {
+    padding: 10px 15px 5px 15px;
+    text-align: left;
+    position: absolute;
+    bottom: 33px;
+    color: $white !important;
+    @include respond-to("small") {
+      bottom: 43px;
+    }
+
+    h5 {
+      margin-bottom: 4px !important;
+      font-size: $font-14;
+    }
+
+    p {
+      margin-bottom: 0 !important;
+      font-size: $font-12;
+      line-height: 16px;
+      height: 30px;
+      color: $white !important;
+      @include respond-to("small") {
+        height: auto;
+        font-size: $font-11;
+      }
+    }
+  }
+
+  .team-content-social {
+    position: absolute;
+    bottom: 0px;
+    @include respond-to("small") {
+      bottom: 10px;
+    }
+    ul {
+      list-style: none !important;
+      padding-left: 0;
+      margin-bottom: 10px;
+
+      li {
+        text-align: left;
+        padding-left: 15px;
+      }
+      svg {
+        fill: $white;
+      }
+    }
+  }
+}
+.life-synoverge .col-lg-2 {
+  width: 19.666667%;
+  @include respond-to("xl") {
+    width: 33.33%;
+  }
+  @include respond-to("small") {
+    width: 100%;
+  }
+  h4 {
+    br {
+      @include respond-to("small") {
+        display: none;
+      }
+    }
+  }
+}
+
+// career css
+
+.Job-col {
+  display: table-cell !important;
+  width: 100%;
+  border: 1px solid $greycolor;
+  margin: 15px 0;
+  border-radius: 5px;
+  padding: 15px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    background-color: $primaryColor;
+    color: $white !important;
+    .job-position,
+    .job-exp {
+      color: $white !important;
+    }
+    .black-arrow {
+      display: none;
+    }
+    .white-arrow {
+      display: block;
+    }
+  }
+  .job-logo {
+    float: left;
+    margin: 0 15px 0 0;
+  }
+
+  .job-position {
+    font-size: $font-16;
+    color: $mildblack;
+    font-weight: $medium-weight;
+    padding-bottom: 5px;
+  }
+
+  .arrow {
+    float: right;
+    position: absolute;
+    right: 15px;
+    top: 29px;
+  }
+  .job-exp {
+    color: $darkblack !important;
+  }
+  .white-arrow {
+    display: none;
+  }
+}
+
+// .net details css
+.interested-candidate {
+  background: $primaryColor;
+  font-size: $font-18;
+  color: $white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-align: center;
+  float: left;
+  margin-bottom: 50px;
+
+  @include respond-to("small") {
+    margin-top: 16px;
+  }
+
+  a {
+    color: $white;
+    font-weight: $medium-weight;
+    font-size: $font-18;
+  }
+}
+
+.module-gray.EmployeeStories {
+  img {
+    border: 1px solid $lightgreycolor;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  a {
+    margin-top: -15px;
+    color: $linkcolor !important;
+    font-weight: $regular-weight;
+    font-size: $font-16;
+    background: url("../../assets/images/circle.png") left border-box no-repeat;
+    padding: 5px 10px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $orangecolor !important;
+    }
+  }
+}
+
+// casestudy css
+.insurance {
+  h3 {
+    color: $primaryColor !important;
+    font-size: $font-20;
+    margin-top: 15px;
+  }
+
+  .casestudy {
+    border-bottom: 1px solid $lightgreyborder;
+    padding: 50px 0;
+  }
+
+  .graybg-casestudy {
+    border-bottom: 1px solid $lightgreyborder;
+    //background: url("../../assets/images/casestudies/casestudy-shadow.png") left top no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 50px 0;
+  }
+
+  .insurance .graybg-casestudy:last-child {
+    border-bottom: 0 solid $lightgreyborder !important;
+  }
+
+  .engaged-col {
+    @include border-radii(100px, 30px, 30px, 100px);
+    animation: theme 21s linear infinite;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    padding: 0 3rem;
+    @include respond-to("small") {
+      padding: 0 1.5rem;
+      border-radius: 20px !important;
+    }
+
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      width: 100vw; // IE/Edge
+      height: 100vh; // fallback
+      width: 100vmax;
+      height: 100vmax;
+      background: rgba(0, 0, 0, 0.03);
+      animation: background 90s linear infinite;
+    }
+
+    &:after {
+      left: 15vw;
+    }
+
+    &:before {
+      right: 15vw;
+      animation-delay: -30s;
+      animation-direction: reverse;
+    }
+
+    h3 {
+      font-size: $font-26 !important;
+      font-weight: $medium-weight !important;
+      color: $purpletitle !important;
+      margin-top: 25px;
+      line-height: 40px;
+      margin-bottom: 20px !important;
+    }
+  }
+
+  .engaged-col-bg {
+    background: $white;
+    text-align: center;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 10%);
+    width: 100%;
+    margin: 0 1% 24px 1%;
+    border-radius: 5px;
+    padding: 10px;
+
+    p {
+      @include respond-to("small") {
+        margin: 0 !important;
+      }
+    }
+
+    div {
+      img {
+        height: 70px;
+        margin-bottom: 10px;
+        width: auto;
+
+        @include respond-to("medium") {
+          height: inherit;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+.common-sec {
+  align-self: center;
+
+  .overview-img {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 50px;
+    @include respond-to("medium") {
+      margin-bottom: 25px;
+    }
+    @include respond-to("small-t") {
+      padding-top: 25px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+
+      @include respond-to("small") {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+.testing-services {
+  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+  background: $white;
+  border-radius: 8px;
+  padding: 15px;
+  display: block;
+  min-height: 723px;
+  @include respond-to("xl") {
+    min-height: 811px;
+  }
+  @include respond-to("small-t") {
+    margin-bottom: 15px;
+    min-height: inherit;
+  }
+
+  img {
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    font-size: $font-20;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: $font-14;
+    color: $darkblack;
+  }
+
+  ul {
+    li {
+      font-size: $font-14;
+    }
+  }
+}
+
+img.flagimg {
+  width: 75px;
+  height: auto;
+}
+
+// new scss
+.tools {
+  padding: 50px 0 0 0;
+
+  h3 {
+    font-size: $font-26;
+    font-weight: $semibold-weight;
+    color: $purpletitle;
+    line-height: 40px;
+  }
+
+  img {
+    padding-top: 42px;
+  }
+}
+
+.syno-card {
+  div {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-footer {
+  padding: 10px 0;
+
+  @include respond-to("small-t") {
+    padding: 25px 0;
+    height: inherit;
+  }
+
+  h4 {
+    font-size: $font-18;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: $font-14;
+    color: $fontcolor;
+    margin-bottom: 10px;
+  }
+
+  .mt-40 {
+    margin-top: 40px;
+
+    @include respond-to("small-t") {
+      margin-top: 15px;
+      height: inherit;
+    }
+  }
+
+  .mt-132 {
+    margin-top: 132px;
+
+    @include respond-to("small-t") {
+      margin-top: 15px;
+      height: inherit;
+    }
+  }
+}
+
+form {
+  p {
+    font-size: $font-12 !important;
+    padding-left: 15px !important;
+    color: $lightalert !important;
+    margin-bottom: 0px !important;
+  }
+}
+
+.syno-adv {
+  ul.icon-list {
+    @include respond-to("small") {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.graybg-casestudy img {
+  width: 100px;
+  height: 100px;
+}
+
+.casestudy img {
+  width: 100px;
+  height: 100px;
+}
+
+/**/
+.syno-adv.p-5 {
+  @include border-radii(100px, 30px, 30px, 100px);
+  animation: theme 21s linear infinite;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+  @include respond-to("small-t") {
+    border-radius: 10px !important;
+    padding: 1.5rem !important;
+    margin-bottom: 25px;
+  }
+  &:after,
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100vw; // IE/Edge
+    height: 100vh; // fallback
+    width: 100vmax;
+    height: 100vmax;
+    background: rgba(0, 0, 0, 0.03);
+    animation: background 90s linear infinite;
+  }
+
+  &:after {
+    left: 15vw;
+  }
+
+  &:before {
+    right: 15vw;
+    animation-delay: -30s;
+    animation-direction: reverse;
+  }
+}
+
+@keyframes theme {
+  0% {
+    background: #00ffff;
+  }
+
+  16% {
+    background: #85ffff;
+  }
+
+  33% {
+    background: #bafdff;
+  }
+
+  50% {
+    background: #e1f8fc;
+  }
+
+  66% {
+    background: #a6ffe7;
+  }
+
+  83% {
+    background: #82ffdc;
+  }
+
+  100% {
+    background: #47e0b5;
+  }
+}
+
+@keyframes background {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.content-spacing-right {
+  padding-right: 50px;
+
+  @include respond-to("medium") {
+    padding-right: 0;
+  }
+}
+
+.content-spacing-left {
+  padding-left: 50px;
+
+  @include respond-to("medium") {
+    padding-left: 0;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">" !important;
+  margin-top: 1px;
+}
+
+.breadcrumb-item a {
+  color: $primaryColor !important;
+  text-decoration: none !important;
+  font-size: $font-14;
+}
+
+.breadcrumb-item:last-child a {
+  color: $cyanblack !important;
+}
+
+#career-details .mb-3 {
+  margin-bottom: 0 !important;
+  height: 80px;
+}
+
+#career-details .form-control {
+  height: 50px;
+  border: 2px solid $border;
+  font-size: $font-14;
+}
+
+#career-details select.form-select {
+  height: 50px;
+  margin-bottom: 0 !important;
+  border: 2px solid $border;
+  font-size: $font-14;
+}
+
+.upload-resume .form-control {
+  line-height: 34px;
+}
+
+.career-textarea textarea.form-control {
+  height: 100px !important;
+}
+
+.iot-mobility .syno-card {
+  height: 350px;
+  @include respond-to("xl") {
+    height: 575px;
+  }
+  @include respond-to("small") {
+    margin: 8px 0 7px 0;
+    height: inherit;
+  }
+}
+
+.engaged-col .row {
+  position: relative;
+  z-index: 22;
+}
+.Verification-Validation .col-xl-2 {
+  width: 19.666667%;
+  @include respond-to("xl") {
+    width: 33.333%;
+  }
+  @include respond-to("small") {
+    width: 100%;
+  }
+  .icon-list {
+    padding-left: 15px;
+  }
+}
+.Verification-Validation .syno-card {
+  height: 450px;
+  padding-top: 15px;
+  @include respond-to("xl") {
+    height: 500px;
+  }
+  @include respond-to("small-t") {
+    margin: 8px 0 7px 0;
+    height: inherit;
+  }
+  h4 {
+    br {
+      @include respond-to("small") {
+        display: none;
+      }
+    }
+  }
+}
+
+.icon-box-link {
+  .animate-service-icon {
+    height: 16px !important;
+  }
+}
+
+.icon-box-icon img {
+  border-radius: 50px 10px !important;
+  width: 100%;
+  padding-bottom: 0 !important;
+  @include respond-to("large") {
+    height: 200px;
+  }
+  @include respond-to("small") {
+    border-radius: 10px !important;
+    height: inherit;
+  }
+}
+
+.team-content-social {
+  a {
+    color: $mildtblue;
+  }
+}
+
+.Job-content {
+  h3 {
+    font-size: $font-26 !important;
+    color: $black;
+    margin: 0 0 5px 0 !important;
+    line-height: inherit;
+  }
+
+  p {
+    font-size: $font-16;
+    color: $jobcontent;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0 0 15px 15px;
+
+    li {
+      font-size: $font-16;
+      font-weight: $regular-weight;
+      line-height: inherit;
+      color: $jobcontent;
+      padding-left: 5px;
+
+      &::marker {
+        color: $jobcontent;
+        font-size: $font-16;
+      }
+    }
+  }
+}
+
+#career-details {
+  padding-bottom: 50px;
+  h3 {
+    font-size: $font-26 !important;
+    color: $black;
+    margin: 0 0 15px 0;
+    line-height: inherit;
+  }
+}
+
+.accordion-body {
+  p {
+    color: $jobcontent;
+  }
+}
+
+ol.breadcrumb {
+  padding: 0 0 37px 0;
+  margin: 0;
+  @include respond-to("xxl") {
+    padding: 0 0 25px 0;
+  }
+}
+
+@include respond-to("small") {
+  ol.breadcrumb {
+    padding: 0 0 15px 0 !important;
+  }
+  .insurance ol.breadcrumb {
+    padding-top: 20px !important;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .hide-desktop {
+    display: block !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+.hide-desktop {
+  display: none;
+}
+
+.img75 img {
+  width: 75% !important;
+  margin: 0 auto;
+  display: block;
+}
+
+.insurance ol.breadcrumb {
+  padding: 46px 0;
+  margin: 0;
+}
+
+#career-details ol.breadcrumb {
+  padding-top: 50px;
+
+  @include respond-to("small") {
+    padding-top: 25px !important;
+  }
+}
+
+.case-study .icon-box {
+  padding-bottom: 50px;
+  @include respond-to("small-t") {
+    padding-bottom: 25px !important;
+  }
+}
+.blog .icon-box {
+  padding-bottom: 50px;
+}
+@include respond-to("xxl") {
+  .banner .container {
+    max-width: 90% !important;
+  }
+  .container {
+    max-width: 90% !important;
+  }
+  .mx-100 {
+    max-width: 100% !important;
+  }
+  .apply-job {
+    padding-top: 100px;
+  }
+}
+.case-study .module {
+  padding: 50px 0 0 0;
+  .col-md-4 {
+    margin: 0 1%;
+    width: 31.33333333%;
+    @include respond-to("small") {
+      margin: 0;
+      width: 100%;
+    }
+  }
+  @include respond-to("large") {
+    padding: 25px 0 0 0;
+  }
+  @include respond-to("small") {
+    padding: 0;
+  }
+}
+@include respond-to("small") {
+  .banner .container,
+  .container {
+    max-width: 100% !important;
+  }
+}
+@include respond-to("large") {
+  .apply-job {
+    padding-top: 0px;
+  }
+}
+.microsoft-technologies .syno-card {
+  @include respond-to("xxl") {
+    min-height: 310px;
+  }
+  @include respond-to("xl") {
+    min-height: 360px;
+  }
+  @include respond-to("small") {
+    min-height: inherit;
+  }
+}
+.leadership-Team,
+.our-story,
+.why-synoverge,
+.life-synoverge,
+.contact-us,
+.privacy-policy,
+.blog-content {
+  padding-bottom: 50px;
+  @include respond-to("small-t") {
+    padding-bottom: 25px;
+  }
+}
+.Lets-talk {
+  padding-bottom: 25px;
+  @include respond-to("small-t") {
+    padding-bottom: 0;
+  }
+}
+.common-sec {
+  p.mb-0,
+  ul.icon-list.mb-0 {
+    @include respond-to("small-t") {
+      margin-bottom: 15px !important;
+    }
+  }
+}
+.Enterprise-Applications {
+  .module .syno-card {
+    min-height: inherit;
+    margin-bottom: 12px;
+  }
+}
+.ai-bi-data {
+  .module ul {
+    margin-bottom: 0;
+  }
+}
+.data-pipeline {
+  .icon-list {
+    list-style: none !important;
+    padding-left: 20px;
+    li {
+      margin-bottom: 8px;
+    }
+  }
+}
+.blog-text {
+  p {
+    color: $white;
+    margin-bottom: 0;
+    font-size: $font-18;
+    line-height: 30px;
+    span {
+      font-size: $font-22;
+      a {
+        color: $fontcolor;
+      }
+    }
+  }
+}
+.icon-list.best-practices {
+  li {
+    a {
+      color: $black !important;
+      font-weight: $medium-weight;
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
+.blog-btn {
+  background-color: $white !important;
+  cursor: pointer;
+  padding: 10px 30px;
+  height: 38px;
+  line-height: 38px !important;
+  width: auto;
+  display: table;
+  margin-left: 30px;
+  text-align: center;
+  border: 0;
+  border-radius: 15px !important;
+  @include respond-to("medium") {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  a {
+    color: $black !important;
+    font-size: $font-18;
+    font-weight: $medium-weight;
+  }
+}
+.blog-text {
+  background: linear-gradient(45deg, #ffad2b, #da5c01, #a3489c, #0aeef0);
+  background-size: 600% 600%;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: inline-flex;
+  width: auto;
+  animation: gradientAnimation 20s ease infinite;
+  @include respond-to("medium") {
+    display: block;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.blog-content {
+  img {
+    border-radius: 6px;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  h4 {
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-size: $font-18 !important;
+    margin-bottom: 10px;
+  }
+  .blog-inner-title {
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+}
+.blog-text {
+  p {
+    margin-bottom: 0;
+  }
+}
+.flutter-text {
+  p {
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+
+//margin
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+//Padding
+.pt-0 {
+  padding-top: 0;
+}
+.pt-15 {
+  padding-top: 15px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+
+
+// Fonts
+$primaryFont: "Poppins", sans-serif !important;
+
+//fontsize
+$font-10: 10px;
+$font-11: 11px;
+$font-12: 12px;
+$font-13: 13px;
+$font-14: 14px;
+$font-15: 15px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+$font-26: 26px;
+$font-28: 28px;
+$font-32: 32px;
+$font-38: 38px;
+$font-40: 40px;
+$font-42: 42px;
+$font-48: 48px;
+$font-50: 50px;
+$font-60: 60px;
+$font-80: 80px;
+$font-110: 110px;
+
+
+// Weights
+$thin-weight: 100;
+$xlight-weight: 200;
+$light-weight: 300;
+$regular-weight: 400;
+$medium-weight: 500;
+$semibold-weight: 600;
+$bold-weight: 700;
+$xbold-weight: 800;
+$black-weight: 900;
+
+//Color
+$white: #fff;
+$darkwhite: #fafafa;
+$black: #000;
+$cyanblack: #222;
+$darkblack: #333;
+$lightblack: #999;
+$offblack: #606176;
+$darkColor: #282828;
+$mildblack: #313131;
+$primaryColor: #09b1ef;
+$lightblue: #E8F1FF;
+$lightred:#F77E53;
+$lightgreen: #D2F1E1;
+$lightmagenta: #FFD4D4;
+$mildblue:#eff8f2;
+$mildpurple:#C5D7F6;
+$titleborder: #FFB800;
+$mildgray: #f1f1f1;
+$footerbg:#1a1a1a;
+$border:#DED9D9;
+$playbtn:#2076FF;
+$fontcolor: #575757;
+$lightgreycolor:#f7f7f7;
+$lightgreyborder:#f5f5f5;
+$orangecolor: #f6931e;
+$greycolor : #d5d5d5;
+$bordergray : #d9d9d9;
+$inputcolor : #212529;
+$redalert : #ee0004;
+$lightalert : #f07575;
+$mildtblue: #0077b7;
+$linkcolor : #00aff0;
+$purpletitle : #101130;
+$jobcontent : #575a61;
+$bannercolor : #eef6f5;
+$blackborder : #303030;
+$videobg : #f0f0f0;
+$emaillink: #f5df74;
+
+
+
+//Button Css
+@mixin primaryButton() {
+    background-color: $lightblue !important;
+    color: $primaryColor !important;
+    font-size: $font-16;    
+    text-align: center !important;
+    border: 0;
+    &:active,
+    &:focus {
+      outline: 0 !important;
+    }
+}
+@mixin reddishButton() {
+    background-color: $lightred !important;
+    color: $white !important;
+    font-size: $font-16;    
+    text-align: center !important;
+    border: 0;
+    &:active,
+    &:focus {
+      outline: 0 !important;
+    }
+}
+
+//Border
+@mixin border($border) {
+    -webkit-border: $border;
+    -moz-border: $border;
+    -ms-border: $border;
+    border: $border;
+}
+
+//Border-radius
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+  }
+//Border respective radius
+@mixin border-radii($topLeft, $topRight, $bottomLeft, $bottomRight) {
+    border-top-left-radius: $topLeft !important;
+    border-top-right-radius: $topRight !important;
+    border-bottom-left-radius: $bottomLeft !important;
+    border-bottom-right-radius: $bottomRight !important;
+}
+
+//Responsive Breakpoint mixin
+@mixin respond-to($breakpoint) {
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+      // Prints a media query based on the value
+      @media #{inspect(map-get($breakpoints, $breakpoint))} {
+        @content;
+      }
+    }
+   
+    // If the key doesn't exist in the map
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}
+//Breakpoints
+$breakpoints: (
+  "x-small": (
+    max-width: 576px,
+  ),
+  "small": (
+    max-width: 767px,
+  ),
+  "small-t": (
+    max-width: 768px,
+  ),
+  "medium": (
+    max-width: 991px,
+  ),
+  "large": (
+    max-width: 1024px,
+  ),
+  "xl": (
+    max-width: 1200px,
+  ),
+  "xxl": (
+    max-width: 1440px,
+  ),
+) !default;
+
+
+
+

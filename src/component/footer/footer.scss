@@ -1,0 +1,150 @@
+@import "../../assets/css/variables.scss";
+
+footer {
+    background-color: $footerbg;
+    position: relative;
+    padding: 50px 0 20px;
+    
+    @include respond-to('medium') {
+        padding: 30px 0 10px 0;
+    }
+
+    .pe-10 {
+        padding-right: 10rem;
+    }
+    .footer-nav {
+        h5 {
+            font-size: $font-18;
+            font-weight: $bold-weight;
+            color: $white;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+
+            @include respond-to('medium') {
+                font-size: $font-16;
+            }
+            
+        }
+        h6 {
+            font-size: $font-16;
+            color: $white;
+            font-weight: $medium-weight;
+            line-height: 24px;
+
+            @include respond-to('medium') {
+                font-size: $font-14;
+            }
+        }
+        p {
+            font-size: $font-14;
+            color: $lightblack;
+            font-weight: $regular-weight;
+            line-height: 24px;
+
+            @include respond-to('medium') {
+                font-size: $font-14;
+            }
+
+            img {
+                height: 20px;
+                width: 20px;
+                margin-right: 15px;
+            }
+
+            a {
+                font-size: $font-14;
+                color: $lightblack !important;
+                text-decoration: none;
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: 5px;
+                display: block;
+
+                a {
+                    font-size: $font-14;
+                    color: $lightblack !important;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $white !important;
+
+                    }
+
+                    @include respond-to('medium') {
+                        font-size: $font-14;
+                    }
+
+                }
+            }
+            @include respond-to('small-t') {
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .footer-bottom.footer-bottom {
+        border-top: 1px solid $blackborder !important;
+        margin-top: 30px;
+
+        p {
+            color: $lightblack;
+            font-size: $font-14;
+
+            @include respond-to('medium') {
+                font-size: $font-14;
+            }
+
+            @include respond-to('x-small') {
+                text-align: center;
+            }
+        }
+
+        ul {
+            li {
+                display: inline-block;
+                list-style-type: none;
+                padding: 0 12px;
+
+                a {
+                    svg {
+                        height: 18px;
+                        width: 18px;
+                    }
+                }
+
+                @include respond-to('x-small') {
+                    float: right;
+                    padding: 0 8px;
+                    margin-right: 10px;
+                }
+            }
+
+            @include respond-to('x-small') {
+                text-align: center;
+                width: 40%;
+                margin: 0 auto;
+                padding-left: 0;
+            }
+        }
+    }
+}
+.icon-footer {
+    ul {
+        li {
+            display: inline-block !important;
+            list-style-type: none !important;
+            padding: 0 12px;
+
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+
+    }
+}
