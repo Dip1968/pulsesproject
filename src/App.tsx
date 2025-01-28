@@ -18,6 +18,7 @@ import "./App.css";
 
 import Ourstory from "./component/about/our-story";
 import Aibidata from "./component/technologycoes/ai-bi-data";
+
 import IotMobilityDevices from "./component/technologycoes/iot-mobility-devices";
 import Devops from "./component/technologycoes/devops";
 import Cloud from "./component/technologycoes/cloud";
