@@ -124,6 +124,7 @@ function App() {
             />
             <Route path="/leadership-team" element={<LeadershipTeam />} />
             <Route path="/our-story" element={<OurStory />} />
+
             <Route path="/why-synoverge" element={<WhySynoverge />} />
             <Route path="/career/*" element={<ApplyCareer />} />
             <Route path="/contact-us" element={<Contactus />} />
