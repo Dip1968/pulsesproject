@@ -29,6 +29,10 @@ import nutsandseeds from "../../assets/images/nuts-and-seeds.jpg";
 import globalcustomerfootprint from "../../assets/images/global-customer-footprint.jpg";
 import usericon1 from "../../assets/images/user.png";
 import usericon2 from "../../assets/images/user.png";
+import lijjat from "../../assets/images/clients/lijjat-papad.png";
+import shreeji from "../../assets/images/clients/shreeji.png";
+import angur from "../../assets/images/clients/angur.png";
+
 import clutch from "../../assets/images/clutch.png";
 import microsoft from "../../assets/images/microsoft-lg-1.png";
 import nasscom from "../../assets/images/nasscom-lg-1.png";
@@ -97,7 +101,7 @@ function Home() {
                   <h1>
                     Pulses • Grains
                     <br />
-                    Food Ingrediants.
+                    Food Ingrediants
                   </h1>
                   <br />
                   <h3> Integrated Agri Processing & Distribution Company.</h3>
@@ -678,8 +682,8 @@ function Home() {
                           <img
                             width="115px"
                             height="100%"
-                            src={clutch}
-                            alt="clutch"
+                            src={lijjat}
+                            alt="Lijjat - Papad"
                             loading="lazy"
                           />
                         </a>
@@ -689,8 +693,8 @@ function Home() {
                           <img
                             width="115px"
                             height="100%"
-                            src={microsoft}
-                            alt="microsoft"
+                            src={shreeji}
+                            alt="Shreeji"
                             loading="lazy"
                           />
                         </a>
@@ -700,30 +704,8 @@ function Home() {
                           <img
                             width="115px"
                             height="100%"
-                            src={nasscom}
-                            alt="nasscom"
-                            loading="lazy"
-                          />
-                        </a>
-                      </Carousel.Item>
-                      <Carousel.Item>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                          <img
-                            width="115px"
-                            height="100%"
-                            src={ISOlogo}
-                            alt="ISOlogo"
-                            loading="lazy"
-                          />
-                        </a>
-                      </Carousel.Item>
-                      <Carousel.Item>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                          <img
-                            width="115px"
-                            height="100%"
-                            src={ISOlogo1}
-                            alt="ISOlogo1"
+                            src={angur}
+                            alt="Angur"
                             loading="lazy"
                           />
                         </a>

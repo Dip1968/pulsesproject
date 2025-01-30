@@ -306,6 +306,7 @@
       font-weight: $regular-weight;
       line-height: inherit;
       color: $fontcolor;
+      text-align: justify;
 
       @include respond-to("small") {
         text-align: left;
@@ -860,6 +861,7 @@ img.flagimg {
     font-size: $font-14;
     color: $fontcolor;
     margin-bottom: 10px;
+    text-align: justify;
   }
 
   .mt-40 {
