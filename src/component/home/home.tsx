@@ -49,10 +49,10 @@ import { ControlBar } from "video-react";
 function Home() {
   //  for scrolling postion then increase number
   const [isVisible, setIsVisible] = useState(false);
-  const endCount = 14;
-  const endCount1 = 109;
-  const endCount2 = 250;
-  const endCount3 = 3;
+  const endCount = 40000;
+  const endCount1 = 50;
+  const endCount2 = 20;
+  const endCount3 = 100;
   const endCount4 = 35;
   const endCount5 = 13;
 
