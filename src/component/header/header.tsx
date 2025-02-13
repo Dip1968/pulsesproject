@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import { Nav, Navbar } from "react-bootstrap";
@@ -7,219 +7,137 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../../assets/images/logo.png";
 import "./header.scss";
 
-const scrollToTop = () => {
-  // Scrolls to the top of the page when called
-  window.scrollTo(0, 0);
+const scrollToSection = (sectionClass: string) => {
+  setTimeout(() => {
+    const section = document.querySelector(sectionClass);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }, 100);
 };
 
 function Header() {
-  const [
-    isScrollValueMoreThanHeaderHeight,
-    setIsScrollValueMoreThanHeaderHeight,
-  ] = useState(false);
-
-  //here 96(px) - height of current header
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrollValueMoreThanHeaderHeight(window.scrollY > 100);
+      setIsScrolled(window.scrollY > 100);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    setIsNavOpen(false);
+    setIsDropdownOpen(false);
+  }, [location.pathname]);
+
+  const handleNavLinkClick = () => {
+    setIsNavOpen(false);
+    setIsDropdownOpen(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleAboutClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    if (location.pathname === "/") {
+      scrollToSection(".services-sec");
+    } else {
+      navigate("/");
+      setTimeout(() => scrollToSection(".services-sec"), 200);
+    }
+    handleNavLinkClick();
+  };
+
   return (
     <header>
       <Navbar
         expand="lg"
-        className={
-          isScrollValueMoreThanHeaderHeight ? "fixed-top bg-white " : "bg-white"
-        }
+        className={`bg-white ${isScrolled ? "fixed-top shadow-sm" : ""}`}
+        expanded={isNavOpen}
       >
         <Container>
-          <Navbar.Brand as={Link} to="/" onClick={scrollToTop}>
-            <img src={logo} alt="" width="150px" height="" />
+          <Navbar.Brand as={Link} to="/" onClick={handleNavLinkClick}>
+            <img src={logo} alt="" width="150px" />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Toggle
+            aria-controls="navbarScroll"
+            onClick={() => setIsNavOpen(!isNavOpen)}
+          >
+            {isNavOpen ? (
+              <span>&#10006;</span>
+            ) : (
+              <span className="navbar-toggler-icon" />
+            )}
+          </Navbar.Toggle>
           <Navbar.Collapse id="navbarScroll">
             <Nav className="ms-auto my-2 my-lg-0" navbarScroll>
-              <Nav.Link as={Link} to="/" onClick={scrollToTop}>
+              <Nav.Link href="/" onClick={handleAboutClick}>
                 About Us
               </Nav.Link>
               <NavDropdown
                 title="Products"
                 id="collasible-nav-dropdown"
-                renderMenuOnMount={true}
+                show={isDropdownOpen}
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                onMouseEnter={() => setIsDropdownOpen(true)}
+                onMouseLeave={() => setIsDropdownOpen(false)}
               >
-                <NavDropdown.Item as={Link} to="/pulses" onClick={scrollToTop}>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/pulses"
+                  onClick={handleNavLinkClick}
+                >
                   Pulses & Lentils
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/grains" onClick={scrollToTop}>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/grains"
+                  onClick={handleNavLinkClick}
+                >
                   Grains & Millets
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
                   to="/nutsandseeds"
-                  onClick={scrollToTop}
+                  onClick={handleNavLinkClick}
                 >
                   Nuts & Seeds
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
                   to="/rajmakidneybeans"
-                  onClick={scrollToTop}
+                  onClick={handleNavLinkClick}
                 >
                   Rajma Kidney Beans
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
                   to="/masalaandspices"
-                  onClick={scrollToTop}
+                  onClick={handleNavLinkClick}
                 >
                   Masala & Spices
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
                   to="/healthyandnutrifoods"
-                  onClick={scrollToTop}
+                  onClick={handleNavLinkClick}
                 >
                   Healthy & Nutry Foods
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link as={Link} to="/career" onClick={scrollToTop}>
+              <Nav.Link as={Link} to="/career" onClick={handleNavLinkClick}>
                 Career
               </Nav.Link>
-              {/* <Nav.Link as={Link} to="/case-studies" onClick={scrollToTop}>
-                Operations
-              </Nav.Link>
-              <NavDropdown
-                title="Services"
-                id="collasible-nav-dropdown"
-                renderMenuOnMount={true}
-              >
-                <NavDropdown.Item
-                  as={Link}
-                  to="/digital-transformation"
-                  onClick={scrollToTop}
-                >
-                  Digital Transformation
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/product-engineering-services"
-                  onClick={scrollToTop}
-                >
-                  Platform Engineering{" "}
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/enterprise-applications"
-                  onClick={scrollToTop}
-                >
-                  Enterprise Applications
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/verification-and-validation"
-                  onClick={scrollToTop}
-                >
-                  Verfication & Validation
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown
-                title="Technology CoEs"
-                id="collasible-nav-dropdown"
-                renderMenuOnMount={true}
-              >
-                <NavDropdown.Item
-                  as={Link}
-                  to="/ai-bi-data"
-                  onClick={scrollToTop}
-                >
-                  AI, BI & Data
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/iot-mobility-devices"
-                  onClick={scrollToTop}
-                >
-                  IOT, Mobility & Devices
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/devops" onClick={scrollToTop}>
-                  DevOps
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/cloud" onClick={scrollToTop}>
-                  Cloud
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/microsoft-technologies"
-                  onClick={scrollToTop}
-                >
-                  Microsoft Technologies
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/open-source-technologies"
-                  onClick={scrollToTop}
-                >
-                  Open Source Technologies
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link as={Link} to="/case-studies" onClick={scrollToTop}>
-                Case Studies
-              </Nav.Link> */}
-              {/* <NavDropdown
-                title="About Synoverge"
-                id="collasible-nav-dropdown"
-                renderMenuOnMount={true}
-              >
-                <NavDropdown.Item
-                  as={Link}
-                  to="/our-story"
-                  onClick={scrollToTop}
-                >
-                  Our Story
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/leadership-team"
-                  onClick={scrollToTop}
-                >
-                  Leadership Team
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/why-synoverge"
-                  onClick={scrollToTop}
-                >
-                  Why Synoverge
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/life-at-synoverge"
-                  onClick={scrollToTop}
-                >
-                  Life At Synoverge
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/blog" onClick={scrollToTop}>
-                  Blog
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/career" onClick={scrollToTop}>
-                  Career
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/contact-us"
-                  onClick={scrollToTop}
-                >
-                  Contact Us
-                </NavDropdown.Item>
-              </NavDropdown> */}
               <Button
                 className="btn btn-knowmore"
                 as={Link as any}
                 to="/contact-us"
-                onClick={scrollToTop}
+                onClick={handleNavLinkClick}
               >
                 Contact Us
               </Button>
