@@ -11,12 +11,12 @@ body {
 }
 
 .navbar-brand img {
-  width: 200px;
+  width: 250px;
   @include respond-to("xxl") {
     width: 150px;
   }
   @include respond-to("small-t") {
-    width: 150px;
+    width: 160px;
   }
 }
 

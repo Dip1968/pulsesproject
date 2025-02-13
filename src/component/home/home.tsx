@@ -81,10 +81,6 @@ function Home() {
     window.scrollTo(0, 0);
   };
 
-  //for seo
-  const keywords =
-    "software development company, software development services, software product development, software product development service, mobile app software development service, web software development services, mobile software development company, mobile app development services";
-
   return (
     <Fragment>
       <Helmet>
