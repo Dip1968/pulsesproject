@@ -505,9 +505,6 @@ function Home() {
 
         <Container>
           <section className="synoverge-glance">
-            {/* <h2 className="sectitle">
-              Synoverge at a <span>Glance</span>
-            </h2> */}
             <Row>
               <Col lg={3} md={4} sm={12}>
                 <div className="yearsofexcellence">

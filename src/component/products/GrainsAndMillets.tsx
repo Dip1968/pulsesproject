@@ -1,12 +1,4 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Platformengineering from "../../assets/images/platform-engineering.png";
-import product from "../../assets/images/product-ideation.jpg";
-import design from "../../assets/images/design-development-maintenance.jpg";
-import quality from "../../assets/images/quality-assurance.jpg";
-import devops from "../../assets/images/devops-automation.jpg";
-import legacy from "../../assets/images/legacy-modernization.jpg";
-import platformapproch from "../../assets/images/platform-engineering-our-approach.jpg";
 import banner from "../../assets/images/banner/grains-and-millets.jpg";
 import CustomBreadcrumb from "../BreadCrumbs/CustomebreadCrumb";
 import { Helmet } from "react-helmet";
@@ -17,41 +9,24 @@ function Grains() {
     { label: "Grains & Millets" },
   ];
 
-  const keywords =
-    "Software product engineering services, technology and data migration service, product engineering services, product lifecycle management services, product ideation services, open source software development services, product modernization services, Legacy Modernization Services, Legacy application Modernization Services, Software Re-engineering Services";
   return (
     <div className="Platform-Engineering">
       <Helmet>
         <meta name="robots" content="index,follow" />
-        <title>Software Product Engineering Services </title>
+        <title>Grains & Millets </title>
         <meta
           name="description"
-          content="Synoverge, a top product engineering company, partners with ISVs and enterprises to create market-leading products."
+          content="We provide a diverse selection of high-quality grains and millets, such as wheat, rice, bajra, jowar, and ragi. Perfect for a balanced and healthy diet, our grains are sourced directly from trusted farms to meet the highest standards of nutrition and taste."
         />
-        <meta name="keywords" content={keywords} />
-        <link
-          rel="canonical"
-          href="https://www.synoverge.com/product-engineering-services"
-        />
-        <meta
-          property="og:title"
-          content="Software Product Engineering Services "
-        />
+        <link rel="canonical" href="https://www.reliancepulses.com/grains" />
+        <meta property="og:title" content="Grains & Millets " />
         <meta
           property="og:description"
-          content="Synoverge, a top product engineering company, partners with ISVs and enterprises to create market-leading products."
+          content="We provide a diverse selection of high-quality grains and millets, such as wheat, rice, bajra, jowar, and ragi. Perfect for a balanced and healthy diet, our grains are sourced directly from trusted farms to meet the highest standards of nutrition and taste."
         />
         <meta
           property="og:url"
-          content="https://www.synoverge.com/product-engineering-services"
-        />
-        <meta
-          name="twitter:title"
-          content="Software Product Engineering Services "
-        />
-        <meta
-          name="twitter:description"
-          content="Synoverge, a top product engineering company, partners with ISVs and enterprises to create market-leading products."
+          content="https://www.reliancepulses.com/grains"
         />
       </Helmet>
       <div className="banner">

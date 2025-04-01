@@ -8,58 +8,87 @@ import devops from "../../assets/images/devops-automation.jpg";
 import legacy from "../../assets/images/legacy-modernization.jpg";
 import platformapproch from "../../assets/images/platform-engineering-our-approach.jpg";
 import PlatformEngineeringbanner from "../../assets/images/banner/platform-engineering-banner.jpg";
-import CustomBreadcrumb from '../BreadCrumbs/CustomebreadCrumb';
-import { Helmet } from 'react-helmet';
-
-
+import CustomBreadcrumb from "../BreadCrumbs/CustomebreadCrumb";
+import { Helmet } from "react-helmet";
 
 function PlatformEngineering() {
   const breadcrumbItems = [
-    { label: 'Home', link: '/' },
-    { label: 'Services' ,link:'/digital-transformation'},
-    { label: 'Platform Engineering'},
-
+    { label: "Home", link: "/" },
+    { label: "Services", link: "/digital-transformation" },
+    { label: "Platform Engineering" },
   ];
 
-  const keywords = "Software product engineering services, technology and data migration service, product engineering services, product lifecycle management services, product ideation services, open source software development services, product modernization services, Legacy Modernization Services, Legacy application Modernization Services, Software Re-engineering Services"
+  const keywords =
+    "Software product engineering services, technology and data migration service, product engineering services, product lifecycle management services, product ideation services, open source software development services, product modernization services, Legacy Modernization Services, Legacy application Modernization Services, Software Re-engineering Services";
   return (
     <div className="Platform-Engineering">
       <Helmet>
-        <meta name="robots" content="index,follow"/>
+        <meta name="robots" content="index,follow" />
         <title>Software Product Engineering Services </title>
-        <meta name="description" content="Synoverge, a top product engineering company, partners with ISVs and enterprises to create market-leading products." />
+        <meta
+          name="description"
+          content="Synoverge, a top product engineering company, partners with ISVs and enterprises to create market-leading products."
+        />
         <meta name="keywords" content={keywords} />
-        <link rel="canonical" href="https://www.synoverge.com/product-engineering-services" />
-        <meta property="og:title" content="Software Product Engineering Services " />
-        <meta property="og:description" content="Synoverge, a top product engineering company, partners with ISVs and enterprises to create market-leading products." />
-        <meta property="og:url" content="https://www.synoverge.com/product-engineering-services"/>
-        <meta name="twitter:title" content="Software Product Engineering Services " />
-        <meta name="twitter:description" content="Synoverge, a top product engineering company, partners with ISVs and enterprises to create market-leading products." />
-        </Helmet>
+        <link
+          rel="canonical"
+          href="https://www.reliancepulses.com/product-engineering-services"
+        />
+        <meta
+          property="og:title"
+          content="Software Product Engineering Services "
+        />
+        <meta
+          property="og:description"
+          content="Synoverge, a top product engineering company, partners with ISVs and enterprises to create market-leading products."
+        />
+        <meta
+          property="og:url"
+          content="https://www.reliancepulses.com/product-engineering-services"
+        />
+        <meta
+          name="twitter:title"
+          content="Software Product Engineering Services "
+        />
+        <meta
+          name="twitter:description"
+          content="Synoverge, a top product engineering company, partners with ISVs and enterprises to create market-leading products."
+        />
+      </Helmet>
       <div className="banner">
-          <Container>
-            <Row>
-              <Col xs={12} md={6}>
-                <div className="banner-cont">
+        <Container>
+          <Row>
+            <Col xs={12} md={6}>
+              <div className="banner-cont">
                 <h1>Platform Engineering</h1>
-                  {/* <h1>Trust your Platform and Product Engineering with us</h1> */}
-                  <p>Extensive Experience in Building and Modernizing Platforms</p>
-                </div>
-              </Col>
-              <Col xs={12} md={6}>
-                <div className="banner-img">
-                  <img src={PlatformEngineeringbanner} alt="Platform-Engineering" title="Platform-Engineering" />
-                </div>                
-              </Col>
-            </Row>
-          </Container>
-        </div>
+                {/* <h1>Trust your Platform and Product Engineering with us</h1> */}
+                <p>
+                  Extensive Experience in Building and Modernizing Platforms
+                </p>
+              </div>
+            </Col>
+            <Col xs={12} md={6}>
+              <div className="banner-img">
+                <img
+                  src={PlatformEngineeringbanner}
+                  alt="Platform-Engineering"
+                  title="Platform-Engineering"
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
       <div className="module">
         <Container>
-        <CustomBreadcrumb items={breadcrumbItems} />
+          <CustomBreadcrumb items={breadcrumbItems} />
           <Row>
-          <h3 className="hide-desktop">Overview</h3>
-            <Col xs={{ span: 12, order: 2 }} lg={{ span: 6, order: 1 }} className="common-sec">
+            <h3 className="hide-desktop">Overview</h3>
+            <Col
+              xs={{ span: 12, order: 2 }}
+              lg={{ span: 6, order: 1 }}
+              className="common-sec"
+            >
               <div className="content-spacing-right">
                 <h3 className="hide-mobile">Overview</h3>
                 <p>
@@ -89,7 +118,11 @@ function PlatformEngineering() {
                 </p>
               </div>
             </Col>
-            <Col xs={{ span: 12, order: 1 }} lg={{ span: 6, order: 2 }} className="common-sec">
+            <Col
+              xs={{ span: 12, order: 1 }}
+              lg={{ span: 6, order: 2 }}
+              className="common-sec"
+            >
               <div className="overview-img img75">
                 <img
                   src={Platformengineering}
@@ -120,8 +153,8 @@ function PlatformEngineering() {
                 when the need arises.
               </p>
             </Col>
-            </Row>
-            <Row className="mt-4">
+          </Row>
+          <Row className="mt-4">
             <h3 className="hide-desktop">Product Ideation</h3>
             <Col xs={12} lg={6} className="common-sec">
               <div>
@@ -139,11 +172,10 @@ function PlatformEngineering() {
                 <h3 className="hide-mobile">Product Ideation</h3>
                 <p>
                   To facilitate new product ideation services, Synoverge
-                  provides full lifecycle R&amp;D
-                  services. We also engage with start-up
-                  companies and work with them as advisors and partners. Our
-                  clients access our network of technology alliances, marketing
-                  firms, hosting, and SEO providers.
+                  provides full lifecycle R&amp;D services. We also engage with
+                  start-up companies and work with them as advisors and
+                  partners. Our clients access our network of technology
+                  alliances, marketing firms, hosting, and SEO providers.
                 </p>
                 <p>
                   By leveraging Synoverge for Product ideation, you discover new
@@ -157,15 +189,21 @@ function PlatformEngineering() {
               </div>
             </Col>
           </Row>
-          </Container>
+        </Container>
       </div>
       <div className="module">
         <Container>
           <Row>
-          <h3 className="hide-desktop">Design, Development & Maintenance</h3>
-            <Col xs={{ span: 12, order: 2 }} lg={{ span: 6, order: 1 }} className="common-sec">
+            <h3 className="hide-desktop">Design, Development & Maintenance</h3>
+            <Col
+              xs={{ span: 12, order: 2 }}
+              lg={{ span: 6, order: 1 }}
+              className="common-sec"
+            >
               <div className="content-spacing-right">
-                <h3 className="hide-mobile">Design, Development & Maintenance</h3>
+                <h3 className="hide-mobile">
+                  Design, Development & Maintenance
+                </h3>
                 <p>
                   Our experience in building large scale platforms includes
                   development from scratch, re-engineering platforms, and
@@ -187,7 +225,11 @@ function PlatformEngineering() {
                 </p>
               </div>
             </Col>
-            <Col xs={{ span: 12, order: 1 }} lg={{ span: 6, order: 2 }} className="common-sec">
+            <Col
+              xs={{ span: 12, order: 1 }}
+              lg={{ span: 6, order: 2 }}
+              className="common-sec"
+            >
               <div>
                 <img
                   src={design}
@@ -199,12 +241,14 @@ function PlatformEngineering() {
               </div>
             </Col>
           </Row>
-          </Container>
+        </Container>
       </div>
       <div className="module">
         <Container>
           <Row>
-          <h3 className="hide-desktop">Test Engineering & Quality Assurance</h3>
+            <h3 className="hide-desktop">
+              Test Engineering & Quality Assurance
+            </h3>
             <Col xs={12} lg={6} className="common-sec">
               <div>
                 <img
@@ -218,7 +262,9 @@ function PlatformEngineering() {
             </Col>
             <Col xs={12} lg={6} className="common-sec">
               <div className="content-spacing-left">
-                <h3 className="hide-mobile">Test Engineering & Quality Assurance</h3>
+                <h3 className="hide-mobile">
+                  Test Engineering & Quality Assurance
+                </h3>
                 <p className="mb-0">
                   Continuous testing has become the need of the hour in today's
                   world. While engineering platforms, integrated testing needs
@@ -233,15 +279,23 @@ function PlatformEngineering() {
               </div>
             </Col>
           </Row>
-          </Container>
-        </div>
-        <div className="module">
+        </Container>
+      </div>
+      <div className="module">
         <Container>
           <Row>
-          <h3 className="hide-desktop">DevOps, Automation & Product Lifecycle Management</h3>
-            <Col xs={{ span: 12, order: 2 }} lg={{ span: 6, order: 1 }} className="common-sec">
+            <h3 className="hide-desktop">
+              DevOps, Automation & Product Lifecycle Management
+            </h3>
+            <Col
+              xs={{ span: 12, order: 2 }}
+              lg={{ span: 6, order: 1 }}
+              className="common-sec"
+            >
               <div className="content-spacing-right">
-                <h3 className="hide-mobile">DevOps, Automation & Product Lifecycle Management</h3>
+                <h3 className="hide-mobile">
+                  DevOps, Automation & Product Lifecycle Management
+                </h3>
                 <p className="mb-0">
                   At any stage in the product's life cycle, the emphasis on
                   collaboration, automation, integration, and communication is
@@ -252,7 +306,11 @@ function PlatformEngineering() {
                 </p>
               </div>
             </Col>
-            <Col xs={{ span: 12, order: 1 }} lg={{ span: 6, order: 2 }} className="common-sec">
+            <Col
+              xs={{ span: 12, order: 1 }}
+              lg={{ span: 6, order: 2 }}
+              className="common-sec"
+            >
               <div>
                 <img
                   src={devops}
@@ -264,12 +322,14 @@ function PlatformEngineering() {
               </div>
             </Col>
           </Row>
-          </Container>
-        </div>
-        <div className="module">
+        </Container>
+      </div>
+      <div className="module">
         <Container>
           <Row>
-          <h3 className="hide-desktop">Legacy Modernization & Re-engineering</h3>
+            <h3 className="hide-desktop">
+              Legacy Modernization & Re-engineering
+            </h3>
             <Col xs={12} lg={6} className="common-sec">
               <div>
                 <img
@@ -283,7 +343,9 @@ function PlatformEngineering() {
             </Col>
             <Col xs={12} lg={6} className="common-sec">
               <div className="content-spacing-left">
-                <h3 className="hide-mobile">Legacy Modernization & Re-engineering</h3>
+                <h3 className="hide-mobile">
+                  Legacy Modernization & Re-engineering
+                </h3>
                 <p className="mb-0">
                   Synoverge has proven experience in helping its clients migrate
                   and re-engineer their products to state-of-the-art,
@@ -294,26 +356,30 @@ function PlatformEngineering() {
               </div>
             </Col>
           </Row>
-          </Container>
-        </div>
-        <div className="module">
+        </Container>
+      </div>
+      <div className="module">
         <Container>
           <Row>
-          <h3 className="hide-desktop">Our Approach</h3>
-            <Col  xs={12} md={12} className="common-sec">
+            <h3 className="hide-desktop">Our Approach</h3>
+            <Col xs={12} md={12} className="common-sec">
               <div>
-              <h3 className="hide-mobile">Our Approach</h3>
-              <p>
-                At any stage in the product's life cycle, the emphasis on
-                collaboration, automation, integration, and communication is
-                given utmost importance. Our focus on DevOps ensures the
-                on-boarding of applications by facilitating continuous
-                integration and development and automating end-to-end delivery
-                pipeline across several leading platforms.
-              </p>
+                <h3 className="hide-mobile">Our Approach</h3>
+                <p>
+                  At any stage in the product's life cycle, the emphasis on
+                  collaboration, automation, integration, and communication is
+                  given utmost importance. Our focus on DevOps ensures the
+                  on-boarding of applications by facilitating continuous
+                  integration and development and automating end-to-end delivery
+                  pipeline across several leading platforms.
+                </p>
               </div>
             </Col>
-            <Col xs={{ span: 12, order: 3 }} lg={{ span: 6, order: 2 }} className="common-sec">
+            <Col
+              xs={{ span: 12, order: 3 }}
+              lg={{ span: 6, order: 2 }}
+              className="common-sec"
+            >
               <div className="approach content-spacing-right">
                 <p>The approach mainly constitutes following aspects:</p>
                 <ul className="icon-list">
@@ -341,7 +407,11 @@ function PlatformEngineering() {
                 </p>
               </div>
             </Col>
-            <Col xs={{ span: 12, order: 1 }} lg={{ span: 6, order: 3 }} className="common-sec">
+            <Col
+              xs={{ span: 12, order: 1 }}
+              lg={{ span: 6, order: 3 }}
+              className="common-sec"
+            >
               <div>
                 <img
                   src={platformapproch}

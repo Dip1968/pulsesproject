@@ -62,16 +62,6 @@ function Contactus() {
 
   return (
     <Container fluid className="px-0">
-      {/* <Helmet>
-        <title>Contact Synoverge | Get in Touch Now | Synoverge</title>
-        <meta name="robots" content="index,follow" />
-        <meta
-          name="description"
-          content="
-          We are here to support the success of your company. Reach out to Synoverge. Get in touch for professional IT assistance, questions, and partnerships."
-        />
-        <link rel="canonical" href="https://www.synoverge.com/contact-us" />
-      </Helmet> */}
       <div className="contact-us">
         <div className="banner">
           <Container>
@@ -79,11 +69,6 @@ function Contactus() {
               <Col xs={12} md={6}>
                 <div className="banner-cont">
                   <h1>Contact Us</h1>
-                  {/* <h1>Transforming Data into Intelligence</h1> */}
-                  {/* <p>
-                    Improve decision making through business insights with our
-                    analytics roadmap
-                  </p> */}
                 </div>
               </Col>
               <Col xs={12} md={6}>
@@ -124,15 +109,7 @@ function Contactus() {
                   <p>
                     <strong>Tel.:</strong>{" "}
                     <Link to="tel:+919879106400">+91 9879106400</Link>
-                    {/* <Link to="tel:+917949062117">7</Link> */}
                   </p>
-                  {/* <p>
-                    <strong>US Number:</strong> 201-565-9282
-                  </p> */}
-                  {/* <p>
-                    <strong>Skype:</strong>{" "}
-                    <Link to="skype:synoverge">synoverge</Link>
-                  </p> */}
                   <p>
                     <strong>Email: </strong>
                     <Link to="mailto:reliancepulses@gmail.com">

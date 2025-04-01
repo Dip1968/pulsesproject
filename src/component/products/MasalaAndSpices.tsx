@@ -1,21 +1,4 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import erp from "../../assets/images/erp.png";
-import ax from "../../assets/images/microsoft-daynamics-ax.png";
-import nav from "../../assets/images/microsoft-daynamics-nav.png";
-import crm from "../../assets/images/microsoft-daynamics-crm.png";
-import d365 from "../../assets/images/microsoft-daynamics-365.png";
-import dynamics from "../../assets/images/365dynamics.png";
-import financeoperations from "../../assets/images/finance-operations.png";
-import finance from "../../assets/images/finance.png";
-import chain from "../../assets/images/chain.png";
-import project from "../../assets/images/project.png";
-import commerce from "../../assets/images/commerce.png";
-import sales from "../../assets/images/sales.png";
-import customerservice from "../../assets/images/customer-service.png";
-import fieldservice from "../../assets/images/field-service.png";
-import marketing from "../../assets/images/marketing.png";
-import central from "../../assets/images/business-central.png";
 import banner from "../../assets/images/banner/masala-and-spices.jpg";
 import CustomBreadcrumb from "../BreadCrumbs/CustomebreadCrumb";
 import { Helmet } from "react-helmet";
@@ -34,32 +17,24 @@ function MasalaAndSpices() {
     <div className="Enterprise-Applications">
       <Helmet>
         <meta name="robots" content="index,follow" />
-        <title>ERP Software Development Services </title>
+        <title>Masala & Spices </title>
         <meta
           name="description"
-          content="Enhance your business with Microsoft Dynamics 365 Services, custom ERP software development, and expert D365 implementation to optimize enterprise operations."
+          content="We deliver an authentic range of masalas and spices, including turmeric, cumin, fennel, and chili powder. Our spices are carefully processed to retain their aroma and flavor, ensuring your dishes are rich in taste and quality."
         />
         <meta name="keywords" content={keywords} />
         <link
           rel="canonical"
-          href="https://www.synoverge.com/enterprise-applications"
+          href="https://www.reliancepulses.com/masalaandspices"
         />
-        <meta property="og:title" content="ERP Software Development Services" />
+        <meta property="og:title" content="Masala & Spices" />
         <meta
           property="og:description"
-          content="Enhance your business with Microsoft Dynamics 365 Services, custom ERP software development, and expert D365 implementation to optimize enterprise operations."
+          content="We deliver an authentic range of masalas and spices, including turmeric, cumin, fennel, and chili powder. Our spices are carefully processed to retain their aroma and flavor, ensuring your dishes are rich in taste and quality."
         />
         <meta
           property="og:url"
-          content="https://www.synoverge.com/enterprise-applications"
-        />
-        <meta
-          name="twitter:title"
-          content="ERP Software Development Services"
-        />
-        <meta
-          name="twitter:description"
-          content="Enhance your business with Microsoft Dynamics 365 Services, custom ERP software development, and expert D365 implementation to optimize enterprise operations."
+          content="https://www.reliancepulses.com/masalaandspices"
         />
       </Helmet>
       <div className="banner">

@@ -95,42 +95,6 @@ export const Footer = () => {
                   reliancepulses@gmail.com
                 </Link>
               </p>
-              {/* <div className="icon-footer">
-                <ul className="pt-3">
-                  <li className="ps-0">
-                    <Link
-                      to="https://twitter.com/i/flow/login?redirect_after_login=%2FSynoverge"
-                      target="_blank"
-                    >
-                      <img src={twitter} alt="twitter" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="https://www.linkedin.com/company/synoverge-technologies-pvt.-ltd."
-                      target="_blank"
-                    >
-                      <img src={linkedin} alt="linkedin" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="https://www.facebook.com/SynovergeTechnologiesPvtLtd"
-                      target="_blank"
-                    >
-                      <img src={facebook} alt="facebook" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="https://www.instagram.com/synoverge_ideasenergized/"
-                      target="_blank"
-                    >
-                      <img src={insta} alt="instagram" />
-                    </Link>
-                  </li>
-                </ul>
-              </div> */}
             </div>
           </Col>
         </Row>
