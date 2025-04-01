@@ -15,57 +15,89 @@ import review from "../../assets/images/animated-icons/exam.gif";
 import test from "../../assets/images/animated-icons/test.gif";
 import toolscapabilities from "../../assets/images/tools-capabilities.jpg";
 import verificationvalidationbanner from "../../assets/images/banner/verification-validation-banner.jpg";
-import CustomBreadcrumb from '../BreadCrumbs/CustomebreadCrumb';
-import { Helmet } from 'react-helmet';
+import CustomBreadcrumb from "../BreadCrumbs/CustomebreadCrumb";
+import { Helmet } from "react-helmet";
 
 function verificationandvalidation() {
   const breadcrumbItems = [
-    { label: 'Home', link: '/' },
-    { label: 'Services' ,link:'/digital-transformation'},
-    { label: 'Verification And Validation' },
-
+    { label: "Home", link: "/" },
+    { label: "Services", link: "/digital-transformation" },
+    { label: "Verification And Validation" },
   ];
 
-  const keywords = "software testing services, performance testing in software testing, software testing automation, manual software testing services, Security Testing services, Quality assurance service, Automation strategy Services, Software QA consulting services, Software Testing Consulting Services"
+  const keywords =
+    "software testing services, performance testing in software testing, software testing automation, manual software testing services, Security Testing services, Quality assurance service, Automation strategy Services, Software QA consulting services, Software Testing Consulting Services";
 
   return (
     <div className="Verification-Validation">
-       <Helmet>
-        <meta name="robots" content="index,follow"/>
+      <Helmet>
+        <meta name="robots" content="index,follow" />
         <title>Software Testing Services | Quality assurance service</title>
-        <meta name="description" content="Synoverge provides comprehensive quality assurance and software testing services, ensuring scalable, high-performance applications." />
+        <meta
+          name="description"
+          content="Synoverge provides comprehensive quality assurance and software testing services, ensuring scalable, high-performance applications."
+        />
         <meta name="keywords" content={keywords} />
-        <link rel="canonical" href="https://www.synoverge.com/verification-and-validation" />
-        <meta property="og:title" content="Software Testing Services | Quality assurance service" />
-        <meta property="og:description" content="Synoverge provides comprehensive quality assurance and software testing services, ensuring scalable, high-performance applications." />
-        <meta property="og:url" content="https://www.synoverge.com/verification-and-validation"/>
-        <meta name="twitter:title" content="Software Testing Services | Quality assurance service" />
-        <meta name="twitter:description" content="Synoverge provides comprehensive quality assurance and software testing services, ensuring scalable, high-performance applications." />
-        </Helmet>
+        <link
+          rel="canonical"
+          href="https://www.reliancepulses.com/verification-and-validation"
+        />
+        <meta
+          property="og:title"
+          content="Software Testing Services | Quality assurance service"
+        />
+        <meta
+          property="og:description"
+          content="Synoverge provides comprehensive quality assurance and software testing services, ensuring scalable, high-performance applications."
+        />
+        <meta
+          property="og:url"
+          content="https://www.reliancepulses.com/verification-and-validation"
+        />
+        <meta
+          name="twitter:title"
+          content="Software Testing Services | Quality assurance service"
+        />
+        <meta
+          name="twitter:description"
+          content="Synoverge provides comprehensive quality assurance and software testing services, ensuring scalable, high-performance applications."
+        />
+      </Helmet>
       <div className="banner">
-          <Container>
-            <Row>
-              <Col xs={12} md={6}>
-                <div className="banner-cont">
-                  <h1>Verification And Validation</h1>
-                  {/* <h1>Systems that meet the expectations, today and tomorrow</h1> */}
-                  <p>Our Integrated Testing Approach with right automation to increase release confidence</p>
-                </div>
-              </Col>
-              <Col xs={12} md={6}>
-                <div className="banner-img">
-                  <img src={verificationvalidationbanner} alt="Verification-Validation" title="Verification-Validation" />
-                </div>
-              </Col>
-            </Row>
-          </Container>
+        <Container>
+          <Row>
+            <Col xs={12} md={6}>
+              <div className="banner-cont">
+                <h1>Verification And Validation</h1>
+                {/* <h1>Systems that meet the expectations, today and tomorrow</h1> */}
+                <p>
+                  Our Integrated Testing Approach with right automation to
+                  increase release confidence
+                </p>
+              </div>
+            </Col>
+            <Col xs={12} md={6}>
+              <div className="banner-img">
+                <img
+                  src={verificationvalidationbanner}
+                  alt="Verification-Validation"
+                  title="Verification-Validation"
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
       <div className="module">
         <Container>
-        <CustomBreadcrumb items={breadcrumbItems} />
+          <CustomBreadcrumb items={breadcrumbItems} />
           <Row>
-          <h3 className="hide-desktop">Overview</h3>
-            <Col xs={{ span: 12, order: 2 }} lg={{ span: 6, order: 1 }} className="common-sec">
+            <h3 className="hide-desktop">Overview</h3>
+            <Col
+              xs={{ span: 12, order: 2 }}
+              lg={{ span: 6, order: 1 }}
+              className="common-sec"
+            >
               <div className="content-spacing-right">
                 <h3 className="hide-mobile">Overview</h3>
                 <p>
@@ -86,7 +118,11 @@ function verificationandvalidation() {
                 </p>
               </div>
             </Col>
-            <Col xs={{ span: 12, order: 1 }} lg={{ span: 6, order: 2 }} className="common-sec">
+            <Col
+              xs={{ span: 12, order: 1 }}
+              lg={{ span: 6, order: 2 }}
+              className="common-sec"
+            >
               <div className="overview-img">
                 <img
                   src={verification}
@@ -99,7 +135,7 @@ function verificationandvalidation() {
           </Row>
         </Container>
       </div>
-      <div className="module module-gray" >
+      <div className="module module-gray">
         <Container>
           <Row>
             <Col md={12}>
@@ -113,7 +149,7 @@ function verificationandvalidation() {
               </p>
             </Col>
           </Row>
-            <Row className="mt-4">
+          <Row className="mt-4">
             <h3 className="hide-desktop">Automation Testing</h3>
             <Col xs={12} lg={6} className="common-sec">
               <div>
@@ -145,15 +181,21 @@ function verificationandvalidation() {
               </div>
             </Col>
           </Row>
-          </Container>
-        </div>
-      <div className="module module-gray" >
+        </Container>
+      </div>
+      <div className="module module-gray">
         <Container>
           <Row>
-          <h3 className="hide-desktop">Mobile Testing / Digital Assurance</h3>
-            <Col xs={{ span: 12, order: 2 }} lg={{ span: 6, order: 1 }} className="common-sec">
+            <h3 className="hide-desktop">Mobile Testing / Digital Assurance</h3>
+            <Col
+              xs={{ span: 12, order: 2 }}
+              lg={{ span: 6, order: 1 }}
+              className="common-sec"
+            >
               <div className="content-spacing-right">
-                <h3 className="hide-mobile">Mobile Testing / Digital Assurance</h3>
+                <h3 className="hide-mobile">
+                  Mobile Testing / Digital Assurance
+                </h3>
                 <p>
                   Mobile Apps must be right-the-first-time, having performance
                   aligned with industry standards and seamless user experience
@@ -168,7 +210,11 @@ function verificationandvalidation() {
                 </ul>
               </div>
             </Col>
-            <Col xs={{ span: 12, order: 1 }} lg={{ span: 6, order: 2 }} className="common-sec">
+            <Col
+              xs={{ span: 12, order: 1 }}
+              lg={{ span: 6, order: 2 }}
+              className="common-sec"
+            >
               <div>
                 <img
                   src={digital}
@@ -180,12 +226,12 @@ function verificationandvalidation() {
               </div>
             </Col>
           </Row>
-          </Container>
-        </div>
-        <div className="module module-gray" >
+        </Container>
+      </div>
+      <div className="module module-gray">
         <Container>
           <Row>
-          <h3 className="hide-desktop">Performance Testing</h3>
+            <h3 className="hide-desktop">Performance Testing</h3>
             <Col xs={12} lg={6} className="common-sec">
               <div>
                 <img
@@ -214,15 +260,21 @@ function verificationandvalidation() {
               </div>
             </Col>
           </Row>
-          </Container>
-        </div>
-        <div className="module module-gray" >
+        </Container>
+      </div>
+      <div className="module module-gray">
         <Container>
           <Row>
-          <h3 className="hide-desktop">QA Strategy & Consulting Service</h3>
-            <Col xs={{ span: 12, order: 2 }} lg={{ span: 6, order: 1 }} className="common-sec">
+            <h3 className="hide-desktop">QA Strategy & Consulting Service</h3>
+            <Col
+              xs={{ span: 12, order: 2 }}
+              lg={{ span: 6, order: 1 }}
+              className="common-sec"
+            >
               <div className="content-spacing-right">
-                <h3 className="hide-mobile">QA Strategy & Consulting Service</h3>
+                <h3 className="hide-mobile">
+                  QA Strategy & Consulting Service
+                </h3>
                 <p>
                   Bring efficiencies and achieve desired outcome. Our QA
                   Practice help client teams by improving test maturity &
@@ -248,7 +300,11 @@ function verificationandvalidation() {
                 </ul>
               </div>
             </Col>
-            <Col xs={{ span: 12, order: 1 }} lg={{ span: 6, order: 2 }} className="common-sec">
+            <Col
+              xs={{ span: 12, order: 1 }}
+              lg={{ span: 6, order: 2 }}
+              className="common-sec"
+            >
               <div>
                 <img
                   src={QAStrategy}
@@ -270,14 +326,14 @@ function verificationandvalidation() {
             <Col xs={12} md={4}>
               <div className="testing-services">
                 <div>
-                <img
-                  src={testautomation}
-                  alt="Test-Automation"
-                  title="Test-Automation"
-                  className="w-100"
-                />
+                  <img
+                    src={testautomation}
+                    alt="Test-Automation"
+                    title="Test-Automation"
+                    className="w-100"
+                  />
                 </div>
-              
+
                 <h4>SharePoint Test Automation</h4>
                 <p>
                   The load testing and optimization technique for SharePoint is
@@ -297,15 +353,15 @@ function verificationandvalidation() {
             </Col>
             <Col xs={12} md={4}>
               <div className="testing-services">
-              <div>
-                <img
-                  src={security}
-                  alt="security-testing"
-                  title="security-testing"
-                  className="w-100"
-                />
-              </div>
-              
+                <div>
+                  <img
+                    src={security}
+                    alt="security-testing"
+                    title="security-testing"
+                    className="w-100"
+                  />
+                </div>
+
                 <h4>Security Testing</h4>
                 <p>
                   Considering privacy breaches happening globally, security
@@ -331,15 +387,15 @@ function verificationandvalidation() {
             </Col>
             <Col xs={12} md={4}>
               <div className="testing-services">
-              <div>
-                <img
-                  src={independent}
-                  alt="independent"
-                  title="independent"
-                  className="w-100"
-                />
-              </div>
-              
+                <div>
+                  <img
+                    src={independent}
+                    alt="independent"
+                    title="independent"
+                    className="w-100"
+                  />
+                </div>
+
                 <h4>Independent V & V</h4>
                 <p>
                   A fresh set of eyes to bring different perspective, with
@@ -383,7 +439,7 @@ function verificationandvalidation() {
             </Col>
           </Row>
           <Row>
-            <Col xs={12} md={4}  xl={2}>
+            <Col xs={12} md={4} xl={2}>
               <div className="syno-card">
                 <p>
                   <img
@@ -401,12 +457,14 @@ function verificationandvalidation() {
                 </ul>
               </div>
             </Col>
-            <Col xs={12} md={4}  xl={2}>
+            <Col xs={12} md={4} xl={2}>
               <div className="syno-card">
                 <p>
                   <img src={test} alt="test" title="test" className="w-25" />
                 </p>
-                <h4>Test  <br></br>Strategy </h4>
+                <h4>
+                  Test <br></br>Strategy{" "}
+                </h4>
                 <ul className="icon-list">
                   <li>Select Methodology & Tools</li>
                   <li>Identify Dependencies on External Systems and Risks</li>
@@ -414,7 +472,7 @@ function verificationandvalidation() {
                 </ul>
               </div>
             </Col>
-            <Col xs={12} md={4}  xl={2}>
+            <Col xs={12} md={4} xl={2}>
               <div className="syno-card">
                 <p>
                   <img
@@ -455,7 +513,9 @@ function verificationandvalidation() {
                 <p>
                   <img src={plan} alt="plan" title="plan" className="w-25" />
                 </p>
-                <h4>Test <br></br> Planning</h4>
+                <h4>
+                  Test <br></br> Planning
+                </h4>
                 <ul className="icon-list">
                   <li>Test Scope</li>
                   <li>Schedule & Resource Planning</li>

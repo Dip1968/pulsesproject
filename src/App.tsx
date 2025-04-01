@@ -17,26 +17,15 @@ import Home from "../src/component/home/home";
 import "./App.css";
 
 import Ourstory from "./component/about/our-story";
-import Aibidata from "./component/technologycoes/ai-bi-data";
-
-import IotMobilityDevices from "./component/technologycoes/iot-mobility-devices";
-
-import Devops from "./component/technologycoes/devops";
-import Cloud from "./component/technologycoes/cloud";
-import OpenSourceTech from "./component/technologycoes/open-source-tech";
-import MicrosoftTechnologies from "./component/technologycoes/microsoft-technologies";
 import DigitalTransformation from "./component/services/DigitalTransformation";
 import EnterpriseApplications from "./component/services/EnterpriseApplications";
 import PlatformEngineering from "./component/services/PlatformEngineering";
 import VerificationandValidation from "./component/services/verification-and-validation";
-import LeadershipTeam from "./component/about/Leadership-Team";
 import OurStory from "./component/about/our-story";
-import WhySynoverge from "./component/about/whysynoverge";
 import Career from "./component/career/career";
 import Contactus from "./component/contactus/contact";
 import Error from "./component/error/error";
 import Thankyou from "./component/thankyou/thank-you";
-import Privacypolicy from "./component/privacypolicy/policy";
 import ApplyCareer from "./component/career/applycareer";
 import Pulses from "./component/products/PulsesAndLentils";
 import Grains from "./component/products/GrainsAndMillets";
@@ -65,9 +54,9 @@ function App() {
     const { hostname, protocol, pathname, search } = window.location;
 
     // Check if the current hostname is the non-WWW version
-    if (hostname === "synoverge.com") {
+    if (hostname === "reliancepulses.com") {
       // Redirect to the WWW version
-      window.location.href = `${protocol}//www.synoverge.com${pathname}${search}`;
+      window.location.href = `${protocol}//www.reliancepulses.com${pathname}${search}`;
     }
   }, []);
   return (
@@ -107,31 +96,11 @@ function App() {
               path="/verification-and-validation"
               element={<VerificationandValidation />}
             />
-            <Route path="/ai-bi-data" element={<Aibidata />} />
-            <Route
-              path="/iot-mobility-devices"
-              element={<IotMobilityDevices />}
-            />
-            <Route path="/devops" element={<Devops />} />
-            <Route path="/cloud" element={<Cloud />} />
-            <Route
-              path="/open-source-technologies"
-              element={<OpenSourceTech />}
-            />
-            <Route
-              path="/microsoft-technologies"
-              element={<MicrosoftTechnologies />}
-            />
-            <Route path="/leadership-team" element={<LeadershipTeam />} />
             <Route path="/our-story" element={<OurStory />} />
-
-            <Route path="/why-synoverge" element={<WhySynoverge />} />
             <Route path="/career/*" element={<ApplyCareer />} />
-
             <Route path="/contact-us" element={<Contactus />} />
             <Route path="/404-error" element={<Error />} />
             <Route path="/thank-you" element={<Thankyou />} />
-            <Route path="/privacy-policy" element={<Privacypolicy />} />
             <Route path="/lets-talk" element={<Letstalk />} />
             <Route path="*" element={<Error />} />
           </Routes>

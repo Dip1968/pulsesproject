@@ -1,11 +1,6 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Digitaltransformation from "../../assets/images/digital-transformation.png";
-import offering from "../../assets/images/digital-transformation-offering.jpg";
-import approach from "../../assets/images/digital-transformation-approach.jpg";
 import bannerimg from "../../assets/images/banner/pulses-and-lentils.jpg";
 import "../../component/pages/pages.scss";
-import CustomBreadcrumb from "../BreadCrumbs/CustomebreadCrumb";
 import { Helmet } from "react-helmet";
 
 function Pulses() {
@@ -22,38 +17,23 @@ function Pulses() {
     <div className="digital-trasformation">
       <Helmet>
         <meta name="robots" content="index,follow" />
-        <title>
-          Digital Product Engineering Services | Digital Transformation
-        </title>
+        <title>Pulses & Lentils</title>
         <meta
           name="description"
-          content="Delivering digital transformation for enterprises and ISVs through our expertise in Digital Product Engineering Services."
+          content="At Reliance Pulses, we offer a premium range of pulses and lentils, including Toor Dal, Urad Dal, Masoor Dal, and Moong Dal. Our products are carefully sourced and processed to ensure exceptional quality and flavor, catering to households and kitchens worldwide."
         />
         <meta name="keywords" content={keywords} />
-        <link
-          rel="canonical"
-          href="https://www.synoverge.com/digital-transformation"
-        />
-        <meta
-          property="og:title"
-          content="Digital Product Engineering Services | Digital Transformatio"
-        />
+        <link rel="canonical" href="https://www.reliancepulses.com/pulses" />
+        <meta property="og:title" content="Pulses & Lentils" />
         <meta
           property="og:description"
-          content="Delivering digital transformation for enterprises and ISVs through our expertise in Digital Product Engineering Services."
+          content="At Reliance Pulses, we offer a premium range of pulses and lentils, including Toor Dal, Urad Dal, Masoor Dal, and Moong Dal. Our products are carefully sourced and processed to ensure exceptional quality and flavor, catering to households and kitchens worldwide."
         />
         <meta
           property="og:url"
-          content="https://www.synoverge.com/digital-transformation"
+          content="https://www.reliancepulses.com/pulses"
         />
-        <meta
-          name="twitter:title"
-          content="Digital Product Engineering Services | Digital Transformatio"
-        />
-        <meta
-          name="twitter:description"
-          content="Delivering digital transformation for enterprises and ISVs through our expertise in Digital Product Engineering Services."
-        />
+        <meta name="twitter:title" content="Pulses & Lentils" />
       </Helmet>
       <div className="banner">
         <Container>

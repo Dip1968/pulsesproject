@@ -16,21 +16,45 @@ function DigitalTransformation() {
   ];
 
   // for seo
-  const keywords ="IT digital transformation services, digital transformation services, digital product engineering services, digital transformation consulting services, digital transformation solutions ";
+  const keywords =
+    "IT digital transformation services, digital transformation services, digital product engineering services, digital transformation consulting services, digital transformation solutions ";
 
   return (
     <div className="digital-trasformation">
       <Helmet>
-        <meta name="robots" content="index,follow"/>
-        <title>Digital Product Engineering Services | Digital Transformation</title>
-        <meta name="description" content="Delivering digital transformation for enterprises and ISVs through our expertise in Digital Product Engineering Services." />
+        <meta name="robots" content="index,follow" />
+        <title>
+          Digital Product Engineering Services | Digital Transformation
+        </title>
+        <meta
+          name="description"
+          content="Delivering digital transformation for enterprises and ISVs through our expertise in Digital Product Engineering Services."
+        />
         <meta name="keywords" content={keywords} />
-        <link rel="canonical" href="https://www.synoverge.com/digital-transformation" />
-        <meta property="og:title" content="Digital Product Engineering Services | Digital Transformatio" />
-        <meta property="og:description" content="Delivering digital transformation for enterprises and ISVs through our expertise in Digital Product Engineering Services." />
-        <meta property="og:url" content="https://www.synoverge.com/digital-transformation"/>
-        <meta name="twitter:title" content="Digital Product Engineering Services | Digital Transformatio" />
-        <meta name="twitter:description" content="Delivering digital transformation for enterprises and ISVs through our expertise in Digital Product Engineering Services." />
+        <link
+          rel="canonical"
+          href="https://www.reliancepulses.com/digital-transformation"
+        />
+        <meta
+          property="og:title"
+          content="Digital Product Engineering Services | Digital Transformatio"
+        />
+        <meta
+          property="og:description"
+          content="Delivering digital transformation for enterprises and ISVs through our expertise in Digital Product Engineering Services."
+        />
+        <meta
+          property="og:url"
+          content="https://www.reliancepulses.com/digital-transformation"
+        />
+        <meta
+          name="twitter:title"
+          content="Digital Product Engineering Services | Digital Transformatio"
+        />
+        <meta
+          name="twitter:description"
+          content="Delivering digital transformation for enterprises and ISVs through our expertise in Digital Product Engineering Services."
+        />
       </Helmet>
       <div className="banner">
         <Container>

@@ -1,20 +1,5 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import verification from "../../assets/images/verification-validation.png";
-import automation from "../../assets/images/automation-testing.jpg";
-import digital from "../../assets/images/digital-assurance.jpg";
-import performance from "../../assets/images/performance-testing.jpg";
-import QAStrategy from "../../assets/images/qa-strategy.jpg";
-import testautomation from "../../assets/images/test-automation.jpg";
-import security from "../../assets/images/security-testing.jpg";
-import independent from "../../assets/images/independent.jpg";
-import analysis from "../../assets/images/animated-icons/data-analysis.gif";
-import plan from "../../assets/images/animated-icons/wedding.gif";
-import pie from "../../assets/images/animated-icons/checklist.gif";
-import review from "../../assets/images/animated-icons/exam.gif";
-import test from "../../assets/images/animated-icons/test.gif";
-import toolscapabilities from "../../assets/images/tools-capabilities.jpg";
-import verificationvalidationbanner from "../../assets/images/banner/healthy-and-nutri-foods.jpg";
+import healthyandnutrifoodsbanner from "../../assets/images/banner/healthy-and-nutri-foods.jpg";
 import CustomBreadcrumb from "../BreadCrumbs/CustomebreadCrumb";
 import { Helmet } from "react-helmet";
 
@@ -25,42 +10,27 @@ function HealthyAndNutriFoods() {
     { label: "Verification And Validation" },
   ];
 
-  const keywords =
-    "software testing services, performance testing in software testing, software testing automation, manual software testing services, Security Testing services, Quality assurance service, Automation strategy Services, Software QA consulting services, Software Testing Consulting Services";
-
   return (
     <div className="Verification-Validation">
       <Helmet>
         <meta name="robots" content="index,follow" />
-        <title>Software Testing Services | Quality assurance service</title>
+        <title>Healthy and Nutri Foods</title>
         <meta
           name="description"
-          content="Synoverge provides comprehensive quality assurance and software testing services, ensuring scalable, high-performance applications."
+          content="Our healthy and nutri foods range includes protein-packed snacks, superfoods, and wholesome ingredients designed to support a balanced and nutritious lifestyle. At Reliance Pulses, we prioritize health without compromising on taste or quality."
         />
-        <meta name="keywords" content={keywords} />
         <link
           rel="canonical"
-          href="https://www.synoverge.com/verification-and-validation"
+          href="https://www.reliancepulses.com/healthyandnutrifoods"
         />
-        <meta
-          property="og:title"
-          content="Software Testing Services | Quality assurance service"
-        />
+        <meta property="og:title" content="Healthy and Nutri Foods" />
         <meta
           property="og:description"
-          content="Synoverge provides comprehensive quality assurance and software testing services, ensuring scalable, high-performance applications."
+          content="Our healthy and nutri foods range includes protein-packed snacks, superfoods, and wholesome ingredients designed to support a balanced and nutritious lifestyle. At Reliance Pulses, we prioritize health without compromising on taste or quality."
         />
         <meta
           property="og:url"
-          content="https://www.synoverge.com/verification-and-validation"
-        />
-        <meta
-          name="twitter:title"
-          content="Software Testing Services | Quality assurance service"
-        />
-        <meta
-          name="twitter:description"
-          content="Synoverge provides comprehensive quality assurance and software testing services, ensuring scalable, high-performance applications."
+          content="https://www.reliancepulses.com/healthyandnutrifoods"
         />
       </Helmet>
       <div className="banner">
@@ -81,7 +51,7 @@ function HealthyAndNutriFoods() {
             <Col xs={12} md={6}>
               <div className="banner-img">
                 <img
-                  src={verificationvalidationbanner}
+                  src={healthyandnutrifoodsbanner}
                   alt="Verification-Validation"
                   title="Verification-Validation"
                 />
